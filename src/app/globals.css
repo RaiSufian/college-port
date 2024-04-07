@@ -16,14 +16,15 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background-color: #FCF9FC;
+}
+input:focus{
+ outline: none;
+ border: none;
+}
+.hero_text_shadow{
+  text-shadow: 1px 1px 1px #333;
 }
 
 @layer utilities {
