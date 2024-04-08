@@ -13,7 +13,7 @@ const Header = () => {
                 <div className="logo">
                     <Image src={Logo} alt="logo" width={210} />
                 </div>
-                <div className="flex-1 text-center text-blue-800">
+                <div className="flex-1 text-center text-[#0B3A67]">
                     <h1 className={`text-7xl font-bold ${robotoBold.className}`}>Govt. Associate College </h1>
                     <h2 className="text-5xl">(Boys) Pindi Bhattian</h2>
                 </div>

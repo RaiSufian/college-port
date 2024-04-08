@@ -16,15 +16,27 @@
   }
 }
 
-body{
+body {
   background-color: #FCF9FC;
 }
-input:focus{
- outline: none;
- border: none;
+
+input:focus {
+  outline: none;
+  border: none;
 }
-.hero_text_shadow{
+
+.hero_text_shadow {
   text-shadow: 1px 1px 1px #333;
+}
+
+.guide-bg {
+
+  background: linear-gradient(rgba(11, 58, 103, 0.9), rgba(11, 58, 103, 0.9)), url("../../public/assets/img4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+
 }
 
 @layer utilities {
