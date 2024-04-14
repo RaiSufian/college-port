@@ -3,7 +3,7 @@ import "./globals.css";
 import Topbar from "@/components/topbar";
 import Header from "@/components/header";
 import Menu from "@/components/menu";
-
+import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,8 +17,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Topbar />
         <Header />
-        <Menu/>
-        {children}</body>
+        <Menu />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
