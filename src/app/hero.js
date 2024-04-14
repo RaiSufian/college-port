@@ -30,24 +30,24 @@ const Hero = () => {
         <div className="w-100 overflow-hidden relative bg-white">
             <Slider {...settings}>
                 <div>
-                    <img src={Img1.src} className="object-top w-[100%] h-[520px] object-cover" />
+                    <img src={Img1.src} className="object-top w-[100%] h-[280px] md:h-[380px] lg:h-[520px] object-cover" />
                 </div>
                 <div>
-                    <img src={Img2.src} className="object-top w-[100%] h-[520px] object-cover" />
+                    <img src={Img2.src} className="object-top w-[100%] h-[280px] md:h-[380px] lg:h-[520px] object-cover" />
                 </div>
                 <div>
-                    <img src={Img3.src} className="object-top w-[100%] h-[520px] object-cover" />
+                    <img src={Img3.src} className="object-top w-[100%] h-[280px] md:h-[380px] lg:h-[520px] object-cover" />
                 </div>
 
 
             </Slider>
             <div className="absolute bg-opacity-5 w-full h-full bg-black text-white top-0 left-0">
                 <div className="container mx-auto">
-                    <div className="px-10 py-16 w-[620px]">
+                    <div className="px-2 md:px-5 lg:px-10 py-2 md:py-5 lg:py-16 md:w-[620px]">
                         <div className="">
-                            <h3 className="text-4xl font-bold leading-10 text-yellow-400 hero_text_shadow">22 YEARS OF EXCELLENCE IN EDUCATION</h3>
-                            <p className="py-5 text-white text-lg mb-4"> As a college we have a strong focus on student's academic progress and achievement along with its contribution to the nation building.  </p>
-                            <h4 className={`text-[#0B3A67] font-bold text-2xl mb-4 ${roboto.className}`}>Lets Come Start</h4>
+                            <h3 className="text-2xl md:text-4xl font-bold leading-10 text-yellow-400 hero_text_shadow">22 YEARS OF EXCELLENCE IN EDUCATION</h3>
+                            <p className="py-2 md:py-5 text-white md:text-lg md:mb-4"> As a college we have a strong focus on student's academic progress and achievement along with its contribution to the nation building.  </p>
+                            <h4 className={`text-[#0B3A67] font-bold text-2xl mb-2 md:mb-4 ${roboto.className}`}>Lets Come Start</h4>
                             <Link href="#" className="bg-[#0B3A67] px-5 py-3 rounded">Contect US </Link>
 
                         </div>
