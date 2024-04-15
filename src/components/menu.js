@@ -47,11 +47,11 @@ const Menu = () => {
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
-                                        <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</Link>
-                                        <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Labrary</Link>
-                                        <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</Link>
-                                        <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Staf</Link>
-                                        <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contect Us</Link>
+                                        <Link href="/" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</Link>
+                                        <Link href="/library" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Labrary</Link>
+                                        <Link href="/aboutus" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</Link>
+                                        <Link href="/faculty" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Staf</Link>
+                                        <Link href="/contactus" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contect Us</Link>
                                     </div>
                                 </div>
                             </div>
@@ -59,19 +59,17 @@ const Menu = () => {
                     </div>
                 </header>
 
-                <div className="bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded">
-                    <select className="w-24 md:w-40 rounded">
+                <div className=" bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded">
+                    <select className="w-20 md:w-40 rounded">
                         <option>Keyword </option>
                         <option>Title</option>
                         <option>Author</option>
                         <option>Description</option>
                     </select>
-                    <form className="flex-1 flex">
-                        <input type='text' placeholder='Seacrh library collection' className="flex-1 py-1 px-3 rounded-tl rounded-bl" />
-                        <button className="flex justify-center items-center w-8 md:w-28 rounded-br rounded-tr bg-[#e2e0e2]">
-                            <svg className="md:hidden w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
+                    <form className="flex-1 flex relative">
+                        <input type='text' placeholder='Seacrh library collection' className="flex-1 py-1 px-1 md:px-3 rounded-tl rounded-bl" />
+                        <button className="right-0 h-full absolute sm:relative flex justify-center items-center w-8 md:w-28 rounded-br rounded-tr bg-[#e2e0e2]">
+                            <svg className="md:hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M464 428L339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37a110.5 110.5 0 0 1-110.37 110.37" /></svg>
                             <span className="hidden md:block">Search</span></button>
                     </form>
                 </div>
