@@ -18,7 +18,7 @@ const FeatureSection = () => {
 
     return (
         <div className="container mx-auto py-6  px-3 md:px-10">
-            <h4 className={`text-center uppercase text-3xl text-[#0b3a67] py-4 relative after:absolute after:bottom-0 after:left-1/2 after:contents-'' after:w-2 after:h-2 after:border-t-2 after:border-l-2 after:border-[#0B3A67] after:rotate-45 ${roboto4.className}`}>Our Features</h4>
+            <h4 className={`text-center uppercase text-xl md:text-3xl text-[#0b3a67] py-4 relative after:absolute after:bottom-0 after:left-1/2 after:contents-'' after:w-2 after:h-2 after:border-t-2 after:border-l-2 after:border-[#0B3A67] after:rotate-45 ${roboto4.className}`}>Our Features</h4>
             <div className="flex  justify-around lg:justify-between mt-3 mb-6 flex-wrap">
                 <div className="w-full md:w-72 lg:w-72 xl:w-96 mt-3 bg-white p-6 cursor-pointer hover:rounded-lg hover:shadow-lg transition-all duration-100 ease-in">
                     <div className="text-5xl text-[#0B3A67]">

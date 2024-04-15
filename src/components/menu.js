@@ -5,13 +5,15 @@ import { usePathname } from 'next/navigation'
 
 const Menu = () => {
 
-    const pathname = usePathname();
-    console.log("path name is", pathname);
+    let pathname = usePathname();
+ 
+    pathname = pathname.substring(1);
+    // console.log("path name is", pathname);
 
     const [mobileMenu, setMobileMenu] = useState(false);
 
     return (
-        <div className="flex justify-center relative ">
+        <div className="flex justify-center relative w-full overflow-hidden ">
             <div className="container sm:px-3 md:px-10 pb-3">
                 <header className="bg-white">
                     <nav className=" flex max-w-7xl items-center justify-end lg:justify-center p-1 md:p-5 lg:px-8" aria-label="Global">
@@ -25,11 +27,11 @@ const Menu = () => {
                             </button>
                         </div>
                         <div className="hidden lg:flex lg:gap-x-8 justify-center">
-                            <Link href="/" className={`text-lg  leading-6  rounded py-1 px-3 ${pathname == "/" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Home</Link>
-                            <Link href="/library" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "/library" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>library</Link>
-                            <Link href="/aboutus" className={` text-lg  leading-6  py-1 rounded px-3 ${pathname == "/aboutus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>About Us</Link>
-                            <Link href="/faculty" className={`text-lg  leading-6 ${pathname == "/faculty" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"} py-1 rounded px-3 `}>Faculty</Link>
-                            <Link href="/contactus" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "/contactus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Contact Us</Link>
+                            <Link href="/" className={`text-lg  leading-6  rounded py-1 px-3 ${pathname == "" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Home</Link>
+                            <Link href="/library" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "library" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>library</Link>
+                            <Link href="/aboutus" className={` text-lg  leading-6  py-1 rounded px-3 ${pathname == "aboutus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>About Us</Link>
+                            <Link href="/faculty" className={`text-lg  leading-6 ${pathname == "faculty" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"} py-1 rounded px-3 `}>Faculty</Link>
+                            <Link href="/contactus" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "contactus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Contact Us</Link>
                         </div>
 
                     </nav>
@@ -59,7 +61,8 @@ const Menu = () => {
                     </div>
                 </header>
 
-                <div className=" bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded">
+
+                <div className={`  bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded-br md:rounded-bl ${pathname == "" || pathname == "library" ? "" : "hidden"}`}>
                     <select className="w-20 md:w-40 rounded">
                         <option>Keyword </option>
                         <option>Title</option>
@@ -68,10 +71,17 @@ const Menu = () => {
                     </select>
                     <form className="flex-1 flex relative">
                         <input type='text' placeholder='Seacrh library collection' className="flex-1 py-1 px-1 md:px-3 rounded-tl rounded-bl" />
-                        <button className="right-0 h-full absolute sm:relative flex justify-center items-center w-8 md:w-28 rounded-br rounded-tr bg-[#e2e0e2]">
+                        <button className=" right-0 h-full absolute sm:relative flex justify-center items-center w-8 md:w-28 rounded-br rounded-tr bg-[#e2e0e2]">
                             <svg className="md:hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M464 428L339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37a110.5 110.5 0 0 1-110.37 110.37" /></svg>
                             <span className="hidden md:block">Search</span></button>
                     </form>
+                </div>
+                <div className={`bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded-br md:rounded-bl ${pathname == "" || pathname == "library" ? "hidden" : ""}`}>
+                    <ul className="flex gap-2 text-white">
+                        <li><Link href="/"> Home</Link></li>
+                        /
+                        <li>{pathname}</li>
+                    </ul>
                 </div>
             </div>
 

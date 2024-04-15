@@ -46,7 +46,7 @@ const Hero = () => {
                     <div className="px-1 md:px-5 lg:px-10 py-2 md:py-5 lg:py-16 md:w-[620px]">
                         <div className="">
                             <h3 className="text-xl md:text-4xl font-bold leading-10 text-yellow-400 hero_text_shadow">22 YEARS OF EXCELLENCE IN EDUCATION</h3>
-                            <p className="py-2 md:py-5 text-white md:text-lg md:mb-4"> As a college we have a strong focus on student's academic progress and achievement along with its contribution to the nation building.  </p>
+                            <p className="py-2 md:py-5 text-white text-sm md:text-lg md:mb-4"> As a college we have a strong focus on student's academic progress and achievement along with its contribution to the nation building.  </p>
                             <h4 className={`text-[#0B3A67] font-bold text-lg md:text-2xl mb-2 md:mb-4 `}>Lets Come Start</h4>
                             <Link href="#" className="text-md bg-[#0B3A67] px-3 md:px-5  py-2 md:py-3 rounded">Contect US </Link>
 
