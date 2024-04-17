@@ -18,13 +18,13 @@ const Footer = () => {
                             About Us
                         </Link></li>
                         <li className="py-1 text-sm"><Link href="#" className="hover:underline">
-                            Contect Us
+                            Contact Us
                         </Link></li>
                         <li className="py-1 text-sm"><Link href="#" className="hover:underline">
-                            Labrary
+                            Library
                         </Link></li>
                         <li className="py-1 text-sm"><Link href="#" className="hover:underline">
-                            Staff
+                        Faculty
                         </Link></li>
                     </ul>
                 </div>

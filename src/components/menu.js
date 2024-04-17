@@ -28,7 +28,7 @@ const Menu = () => {
                         </div>
                         <div className="hidden lg:flex lg:gap-x-8 justify-center">
                             <Link href="/" className={`text-lg  leading-6  rounded py-1 px-3 ${pathname == "" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Home</Link>
-                            <Link href="/library" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "library" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>library</Link>
+                            <Link href="/library" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "library" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Library</Link>
                             <Link href="/aboutus" className={` text-lg  leading-6  py-1 rounded px-3 ${pathname == "aboutus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>About Us</Link>
                             <Link href="/faculty" className={`text-lg  leading-6 ${pathname == "faculty" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"} py-1 rounded px-3 `}>Faculty</Link>
                             <Link href="/contactus" className={`text-lg  leading-6  py-1 rounded px-3  ${pathname == "contactus" ? "bg-[#0B3A67] text-white" : "hover:bg-gray-100 text-gray-900"}`}>Contact Us</Link>
@@ -50,10 +50,10 @@ const Menu = () => {
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
                                         <Link href="/" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</Link>
-                                        <Link href="/library" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Labrary</Link>
+                                        <Link href="/library" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Library</Link>
                                         <Link href="/aboutus" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</Link>
-                                        <Link href="/faculty" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Staf</Link>
-                                        <Link href="/contactus" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contect Us</Link>
+                                        <Link href="/faculty" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Faculty</Link>
+                                        <Link href="/contactus" onClick={() => setMobileMenu(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</Link>
                                     </div>
                                 </div>
                             </div>
