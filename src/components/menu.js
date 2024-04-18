@@ -14,9 +14,9 @@ const Menu = () => {
 
     return (
         <div className="flex justify-center relative w-full overflow-hidden ">
-            <div className="container sm:px-3 md:px-10 pb-3">
+            <div className="container sm:px-3 md:px-10">
                 <header className="bg-white">
-                    <nav className=" flex max-w-7xl items-center justify-end lg:justify-center p-1 md:p-5 lg:px-8" aria-label="Global">
+                    <nav className=" flex max-w-7xl items-center justify-end lg:justify-center py-1 md:py-3 px-1 md:px-5   lg:px-8" aria-label="Global">
 
                         <div className="flex lg:hidden">
                             <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenu(true)}>
@@ -62,12 +62,15 @@ const Menu = () => {
                 </header>
 
 
-                <div className={`  bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded-br md:rounded-bl ${pathname == "" || pathname == "library" ? "" : "hidden"}`}>
-                    <select className="w-20 md:w-40 rounded">
-                        <option>Keyword </option>
+                <div className={`  bg-[#0B3A67] flex py-1 md:py-3 px-1 md:px-4 gap-2 md:rounded-br md:rounded-bl ${pathname == "library" ? "" : "hidden"}`}>
+                    <select className="w-20 md:w-40 rounded focus:outline-none focus:border-0">
+                        <option>All </option>
                         <option>Title</option>
-                        <option>Author</option>
-                        <option>Description</option>
+                        <option>Subject</option>
+                        <option>ISBN</option>
+                        <option>ISSN</option>
+                        <option>Call number</option>
+                        <option>Publisher</option>
                     </select>
                     <form className="flex-1 flex relative">
                         <input type='text' placeholder='Seacrh library collection' className="flex-1 py-1 px-1 md:px-3 rounded-tl rounded-bl" />

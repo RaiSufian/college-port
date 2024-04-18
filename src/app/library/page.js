@@ -32,11 +32,15 @@ const Library = () => {
 
                         {list.map((item, index) => {
                             return (
-                                <div className={`flex items-start gap-2 p-2 border-t ${index%2 == 0 ? "bg-[#FCF9FC]" : ""}`} key={index}>
+                                <div className={`flex items-start gap-2 p-2 border-t ${index % 2 == 0 ? "bg-[#FCF9FC]" : ""}`} key={index}>
                                     <div className="flex-1">
                                         <h5 className={`cursor-pointer text-lg text-[#0b3a67] ${roboto5.className}`}>Fiqh us sunnah : Funerals and Dhikr / As Sayyid Sabiq</h5>
                                         <h6 className="py-2"> By: Allama Iqbal</h6>
-                                        <p className="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                                        <ul className="text-sm">
+                                            <li>Publisher: <span className="text-gray-500">urdu science acadmy </span></li>
+                                            <li>Subject:<span className="text-gray-500"> Urdu </span></li>
+                                            <li>Call Number:<span className="text-gray-500"> 923.56</span></li>
+                                        </ul>
                                     </div>
                                     <div className="w-32 md:w-40">
                                         <Image src={img1} className="w-full h-full object-cover rounded" />
